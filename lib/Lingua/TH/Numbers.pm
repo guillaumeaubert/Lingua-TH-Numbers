@@ -10,7 +10,7 @@ use Data::Dumper;
 
 =head1 NAME
 
-Lingua::TH::Numbers - Work with and convert Thai numbers.
+Lingua::TH::Numbers - Convert and spell Thai numbers.
 
 
 =head1 VERSION
