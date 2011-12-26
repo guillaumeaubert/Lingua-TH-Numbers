@@ -1,5 +1,5 @@
 ---
-abstract: "Convert and spell Thai numbers."
+abstract: 'Convert and spell Thai numbers.'
 author:
   - 'Guillaume Aubert <aubertg@cpan.org>'
 build_requires:
@@ -15,11 +15,11 @@ meta-spec:
   version: 1.4
 name: Lingua-TH-Numbers
 provides:
-  Lingua::TH::Number:
+  Lingua::TH::Numbers:
     file: lib/Lingua/TH/Numbers.pm
-    version: 1.0.0
+    version: v1.0.0
 requires:
   perl: 5.006
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 1.0.0
+version: v1.0.0
