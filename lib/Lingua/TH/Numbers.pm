@@ -1,3 +1,7 @@
+=encoding utf8
+
+=cut
+
 package Lingua::TH::Numbers;
 
 use strict;
