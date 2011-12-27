@@ -186,6 +186,9 @@ sub thai_numerals
 
 Output the number stored in the object using arabic numerals.
 
+	my $lop_sip = Lingua::TH::Numbers->new( '-๑๐' );
+	print $lop_sip->arabic_numerals(), "\n";
+
 =cut
 
 sub arabic_numerals
