@@ -19,11 +19,11 @@ Lingua::TH::Numbers - Convert and spell Thai numbers.
 
 =head1 VERSION
 
-Version 1.0.0
+Version 1.0.1
 
 =cut
 
-our $VERSION = '1.0.0';
+our $VERSION = '1.0.1';
 
 # Digits from 1 to 9.
 our $DIGITS =
