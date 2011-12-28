@@ -7,12 +7,17 @@ use utf8;
 use Test::More tests => 60;
 use Lingua::TH::Numbers;
 
-
-# Change all the Test::More pipes to output utf8.
-my $builder = Test::More->builder();
-binmode( $builder->output(), ":utf8" );
-binmode( $builder->failure_output(), ":utf8" );
-binmode( $builder->todo_output(), ":utf8" );
+# Change all the Test::More pipes to output utf8, to prevent
+# "Wide character in print" warnings. This is only available for Perl 5.8+
+# however due to the reliance on PerlIO, so earlier versions will fail with
+# "Unknown discipline ':utf8'".
+if ( $] > 5.008 )
+{
+	my $builder = Test::More->builder();
+	binmode( $builder->output(), ":utf8" );
+	binmode( $builder->failure_output(), ":utf8" );
+	binmode( $builder->todo_output(), ":utf8" );
+}
 
 
 foreach my $line ( <DATA> )
