@@ -1,5 +1,8 @@
 :Revision history for Lingua-TH-Numbers.
 
+1.0.3   12/30/2011
+        Upgraded minimum requirement to Perl 5.8.
+
 1.0.2   12/28/2011
         Fixed tests for Perl 5.6, now uses PerlIO only with 5.8+.
 
