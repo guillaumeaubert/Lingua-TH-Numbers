@@ -1,4 +1,4 @@
-use 5.006;
+use 5.008;
 use strict;
 use warnings;
 use Module::Build;
@@ -16,7 +16,7 @@ my $builder = Module::Build->new(
 	},
 	requires            =>
 	{
-		'perl'                  => 5.006,
+		'perl'                  => 5.008,
 	},
 	add_to_cleanup      =>
 	[

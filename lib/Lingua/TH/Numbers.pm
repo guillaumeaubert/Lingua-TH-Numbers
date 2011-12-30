@@ -4,6 +4,7 @@
 
 package Lingua::TH::Numbers;
 
+use 5.008;
 use strict;
 use warnings;
 use utf8;
@@ -366,6 +367,18 @@ sub _spell_integer
 =head1 AUTHOR
 
 Guillaume Aubert, C<< <aubertg at cpan.org> >>.
+
+
+=head1 CAVEAT
+
+There's too many Unicode issues in Perl 5.6 (in particular with tr/// which
+this module uses) and Perl 5.6 is 10 year old at this point, so I decided to
+make Perl 5.8 the minimum requirement for this module after a lot of time
+spent jumping through pre-5.8 hoops.
+
+If you really need this module and you are still using a version of Perl that
+predates 5.8, please let me know although I would really encourage you to
+upgrade.
 
 
 =head1 BUGS

@@ -19,7 +19,7 @@ provides:
     file: lib/Lingua/TH/Numbers.pm
     version: v1.0.2
 requires:
-  perl: 5.006
+  perl: 5.008
 resources:
   license: http://opensource.org/licenses/artistic-license.php
 version: v1.0.2
