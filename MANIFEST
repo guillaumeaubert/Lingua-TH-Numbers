@@ -1,3 +1,4 @@
+.perlcriticrc
 Build.PL
 Changes
 ignore.txt
@@ -13,5 +14,6 @@ t/20-thai_numerals.t
 t/30-arabic_numerals.t
 t/50-spell.t
 t/manifest.t
+t/module_versions.t
 t/pod.t
 t/pod-coverage.t
