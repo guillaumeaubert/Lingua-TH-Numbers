@@ -1,2 +1,5 @@
 # Change default severity to harsh.
 severity = harsh
+
+# Don't require /x on regexes.
+[-RegularExpressions::RequireExtendedFormatting]
