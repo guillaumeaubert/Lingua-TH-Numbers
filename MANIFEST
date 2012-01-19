@@ -15,5 +15,6 @@ t/30-arabic_numerals.t
 t/50-spell.t
 t/manifest.t
 t/module_versions.t
+t/perlcritic.t
 t/pod.t
 t/pod-coverage.t
