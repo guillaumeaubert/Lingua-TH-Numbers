@@ -23,6 +23,19 @@ my $builder = Module::Build->new(
 		'Lingua-TH-Numbers-*',
 	],
 	create_makefile_pl  => 'traditional',
+	configure_requires  =>
+	{
+		'Module::Build'         => 0,
+	},
+	meta_merge          =>
+	{
+		resources               =>
+		{
+			repository  => 'https://github.com/guillaumeaubert/Lingua-TH-Numbers',
+			homepage    => 'https://metacpan.org/release/Lingua-TH-Numbers',
+			bugtracker  => 'https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues',
+		},
+	},
 );
 
 $builder->create_build_script();

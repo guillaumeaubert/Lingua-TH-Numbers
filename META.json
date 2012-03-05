@@ -23,7 +23,7 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.4"
+            "Module::Build" : "0"
          }
       },
       "runtime" : {
@@ -40,9 +40,16 @@
    },
    "release_status" : "stable",
    "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues"
+      },
+      "homepage" : "https://metacpan.org/release/Lingua-TH-Numbers",
       "license" : [
          "http://opensource.org/licenses/artistic-license.php"
-      ]
+      ],
+      "repository" : {
+         "url" : "https://github.com/guillaumeaubert/Lingua-TH-Numbers"
+      }
    },
    "version" : "v1.0.4"
 }
