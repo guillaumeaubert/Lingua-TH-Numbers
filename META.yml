@@ -3,8 +3,6 @@ abstract: 'Convert and spell Thai numbers.'
 author:
   - 'Guillaume Aubert <aubertg@cpan.org>'
 build_requires:
-  Carp: 0
-  Data::Dumper: 0
   Test::More: 0
 configure_requires:
   Module::Build: 0
@@ -20,6 +18,8 @@ provides:
     file: lib/Lingua/TH/Numbers.pm
     version: v1.0.4
 requires:
+  Carp: 0
+  Data::Dumper: 0
   perl: 5.008
 resources:
   bugtracker: https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues

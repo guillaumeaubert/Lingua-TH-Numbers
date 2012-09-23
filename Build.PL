@@ -10,13 +10,13 @@ my $builder = Module::Build->new(
 	dist_version_from   => 'lib/Lingua/TH/Numbers.pm',
 	build_requires      =>
 	{
-		'Carp'                  => 0,
-		'Data::Dumper'          => 0,
 		'Test::More'            => 0,
 	},
 	requires            =>
 	{
 		'perl'                  => 5.008,
+		'Carp'                  => 0,
+		'Data::Dumper'          => 0,
 	},
 	add_to_cleanup      =>
 	[
