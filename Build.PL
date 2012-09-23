@@ -10,7 +10,8 @@ my $builder = Module::Build->new(
 	dist_version_from   => 'lib/Lingua/TH/Numbers.pm',
 	build_requires      =>
 	{
-		'Test::More'            => 0,
+		'Test::More'            => 0.94, # For subtest().
+		'Test::Exception'       => 0,
 	},
 	requires            =>
 	{
