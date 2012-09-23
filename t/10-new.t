@@ -4,8 +4,10 @@ use strict;
 use warnings;
 use utf8;
 
-use Test::More tests => 12;
 use Lingua::TH::Numbers;
+use Test::Exception;
+use Test::More tests => 12;
+
 
 # Change all the Test::More pipes to output utf8, to prevent
 # "Wide character in print" warnings. This is only available for Perl 5.8+
@@ -28,17 +30,28 @@ foreach my $line ( <DATA> )
 	
 	my ( $input, $is_valid ) = split( /\t/, $line );
 	
-	eval
+	if ( $is_valid eq 'Yes' )
 	{
-		my $number = Lingua::TH::Numbers->new( $input );
-	};
-	
-	is(
-		$@ ? 'Invalid input' : 'Valid input',
-		$is_valid ne 'Yes' ? 'Invalid input' : 'Valid input',
-		"Build an object with $input as input.",
-	);
+		lives_ok(
+			sub
+			{
+				my $number = Lingua::TH::Numbers->new( $input );
+			},
+			"Build an object with $input as input (success)."
+		);
+	}
+	else
+	{
+		dies_ok(
+			sub
+			{
+				my $number = Lingua::TH::Numbers->new( $input );
+			},
+			"Build an object with $input as input (failure).",
+		);
+	}
 }
+
 
 __DATA__
 # Input	Valid
