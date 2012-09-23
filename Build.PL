@@ -33,7 +33,7 @@ my $builder = Module::Build->new(
 		{
 			repository  => 'https://github.com/guillaumeaubert/Lingua-TH-Numbers',
 			homepage    => 'https://metacpan.org/release/Lingua-TH-Numbers',
-			bugtracker  => 'https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues',
+			bugtracker  => 'http://rt.cpan.org/NoAuth/ReportBug.html?Queue=lingua-th-numbers',
 		},
 	},
 );

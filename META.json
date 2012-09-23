@@ -41,7 +41,7 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues"
+         "web" : "http://rt.cpan.org/NoAuth/ReportBug.html?Queue=lingua-th-numbers"
       },
       "homepage" : "https://metacpan.org/release/Lingua-TH-Numbers",
       "license" : [

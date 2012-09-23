@@ -22,7 +22,7 @@ requires:
   Data::Dumper: 0
   perl: 5.008
 resources:
-  bugtracker: https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues
+  bugtracker: http://rt.cpan.org/NoAuth/ReportBug.html?Queue=lingua-th-numbers
   homepage: https://metacpan.org/release/Lingua-TH-Numbers
   license: http://www.perlfoundation.org/artistic_license_1_0
   repository: https://github.com/guillaumeaubert/Lingua-TH-Numbers
