@@ -17,7 +17,7 @@ name: Lingua-TH-Numbers
 provides:
   Lingua::TH::Numbers:
     file: lib/Lingua/TH/Numbers.pm
-    version: v1.0.4
+    version: v1.0.5
 requires:
   Carp: 0
   Data::Dumper: 0
@@ -27,4 +27,4 @@ resources:
   homepage: https://metacpan.org/release/Lingua-TH-Numbers
   license: http://www.perlfoundation.org/artistic_license_1_0
   repository: https://github.com/guillaumeaubert/Lingua-TH-Numbers
-version: v1.0.4
+version: v1.0.5

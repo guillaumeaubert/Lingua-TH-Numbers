@@ -1,5 +1,12 @@
 :Revision history for Lingua-TH-Numbers.
 
+1.0.5   09/23/2012
+        * Added PerlCritic tests for core policies.
+        * Added various meta information.
+        * Cleaned up requires and build_requires.
+        * Refactored tests to use Test::Exception instead of eval{}.
+        * Updated bugtracker URL.
+
 1.0.4   01/18/2012
         * Cleanup to pass PerlCritic 'harsh'.
 
