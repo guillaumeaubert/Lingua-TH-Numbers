@@ -9,7 +9,7 @@ build_requires:
 configure_requires:
   Module::Build: 0
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.120530'
+generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
 license: artistic
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,6 +24,6 @@ requires:
 resources:
   bugtracker: https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues
   homepage: https://metacpan.org/release/Lingua-TH-Numbers
-  license: http://opensource.org/licenses/artistic-license.php
+  license: http://www.perlfoundation.org/artistic_license_1_0
   repository: https://github.com/guillaumeaubert/Lingua-TH-Numbers
 version: v1.0.4
