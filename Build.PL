@@ -5,7 +5,7 @@ use Module::Build;
 
 my $builder = Module::Build->new(
 	module_name         => 'Lingua::TH::Numbers',
-	license             => 'artistic',
+	license             => 'GPL_3',
 	dist_author         => q{Guillaume Aubert <aubertg@cpan.org>},
 	dist_version_from   => 'lib/Lingua/TH/Numbers.pm',
 	build_requires      =>
