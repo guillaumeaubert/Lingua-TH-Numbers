@@ -1,5 +1,8 @@
 Revision history for Lingua-TH-Numbers.
 
+1.0.6   10/03/2012
+        * Relicensed as GPLv3.
+
 1.0.5   09/23/2012
         * Added PerlCritic tests for core policies.
         * Added various meta information.
