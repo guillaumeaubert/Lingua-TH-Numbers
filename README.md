@@ -1,9 +1,14 @@
 Lingua-TH-Numbers
+=================
+
+[![Build Status](https://travis-ci.org/guillaumeaubert/Lingua-TH-Numbers.png?branch=master)](https://travis-ci.org/guillaumeaubert/Lingua-TH-Numbers)
 
 Lingua-TH-Numbers offers an object oriented package to convert between Thai and
 Arabic numerals, as well as spell numbers in Thai.
 
+
 INSTALLATION
+------------
 
 To install this module, run the following commands:
 
@@ -12,29 +17,33 @@ To install this module, run the following commands:
 	./Build test
 	./Build install
 
+
 SUPPORT AND DOCUMENTATION
+-------------------------
 
 After installing, you can find documentation for this module with the
 perldoc command.
 
-    perldoc Lingua::TH::Numbers
+	perldoc Lingua::TH::Numbers
+
 
 You can also look for information at:
 
-    RT, CPAN's request tracker (report bugs here)
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Lingua-TH-Numbers
+ * [RT, CPAN's request tracker (report bugs here)]
+   (http://rt.cpan.org/NoAuth/Bugs.html?Dist=Lingua-TH-Numbers)
 
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/Lingua-TH-Numbers
+ * [AnnoCPAN, Annotated CPAN documentation]
+   (http://annocpan.org/dist/Lingua-TH-Numbers)
 
-    CPAN Ratings
-        http://cpanratings.perl.org/d/Lingua-TH-Numbers
+ * [CPAN Ratings]
+   (http://cpanratings.perl.org/d/Lingua-TH-Numbers)
 
-    Search CPAN
-        http://search.cpan.org/dist/Lingua-TH-Numbers/
+ * [Search CPAN]
+   (http://search.cpan.org/dist/Lingua-TH-Numbers/)
 
 
 LICENSE AND COPYRIGHT
+---------------------
 
 Copyright (C) 2011-2012 Guillaume Aubert
 
