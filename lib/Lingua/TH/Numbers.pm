@@ -412,9 +412,9 @@ L<http://annocpan.org/dist/lingua-th-numbers>
 
 L<http://cpanratings.perl.org/d/lingua-th-numbers>
 
-=item * Search CPAN
+=item * MetaCPAN
 
-L<http://search.cpan.org/dist/lingua-th-numbers/>
+L<https://metacpan.org/release/Lingua-TH-Numbers>
 
 =back
 

@@ -38,8 +38,8 @@ You can also look for information at:
  * [CPAN Ratings]
    (http://cpanratings.perl.org/d/Lingua-TH-Numbers)
 
- * [Search CPAN]
-   (http://search.cpan.org/dist/Lingua-TH-Numbers/)
+ * [MetaCPAN]
+   (https://metacpan.org/release/Lingua-TH-Numbers)
 
 
 LICENSE AND COPYRIGHT
