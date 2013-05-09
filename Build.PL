@@ -66,7 +66,7 @@ my $builder = $class->new(
 		{
 			repository  => 'https://github.com/guillaumeaubert/Lingua-TH-Numbers',
 			homepage    => 'https://metacpan.org/release/Lingua-TH-Numbers',
-			bugtracker  => 'http://rt.cpan.org/NoAuth/ReportBug.html?Queue=lingua-th-numbers',
+			bugtracker  => 'https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues',
 		},
 	},
 );

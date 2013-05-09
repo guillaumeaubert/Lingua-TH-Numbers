@@ -383,9 +383,10 @@ upgrade.
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-lingua-th-numbers at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=lingua-th-numbers>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
+Please report any bugs or feature requests through the web interface at
+L<https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues/new>.
+I will be notified, and then you'll automatically be notified of progress on
+your bug as I make changes.
 
 
 =head1 SUPPORT
@@ -401,9 +402,9 @@ You can also look for information at:
 
 =item *
 
-RT: CPAN's request tracker
+GitHub's request tracker
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=lingua-th-numbers>
+L<https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues>
 
 =item *
 
