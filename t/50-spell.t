@@ -4,8 +4,10 @@ use strict;
 use warnings;
 use utf8;
 
-use Test::More tests => 60;
 use Lingua::TH::Numbers;
+use Test::FailWarnings -allow_deps => 1;
+use Test::More tests => 60;
+
 
 # Change all the Test::More pipes to output utf8, to prevent
 # "Wide character in print" warnings. This is only available for Perl 5.8+
