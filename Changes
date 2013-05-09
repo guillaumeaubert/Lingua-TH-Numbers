@@ -1,26 +1,26 @@
 Revision history for Lingua-TH-Numbers.
 
-1.0.6   2012-10-03
+v1.0.6  2012-10-03
         * Relicensed as GPLv3.
 
-1.0.5   2012-09-23
+v1.0.5  2012-09-23
         * Added PerlCritic tests for core policies.
         * Added various meta information.
         * Cleaned up requires and build_requires.
         * Refactored tests to use Test::Exception instead of eval{}.
         * Updated bugtracker URL.
 
-1.0.4   2012-01-18
+v1.0.4  2012-01-18
         * Cleanup to pass PerlCritic 'harsh'.
 
-1.0.3   2011-12-30
+v1.0.3  2011-12-30
         * Upgraded minimum requirement to Perl 5.8.
 
-1.0.2   2011-12-28
+v1.0.2  2011-12-28
         * Fixed tests for Perl 5.6, now uses PerlIO only with 5.8+.
 
-1.0.1   2011-12-26
+v1.0.1  2011-12-26
         * Added POD encoding information. Added documentation.
 
-1.0.0   2011-12-26
+v1.0.0  2011-12-26
         * CPAN release.
