@@ -400,27 +400,19 @@ You can also look for information at:
 
 =over
 
-=item *
-
-GitHub's request tracker
+=item * GitHub's request tracker
 
 L<https://github.com/guillaumeaubert/Lingua-TH-Numbers/issues>
 
-=item *
-
-AnnoCPAN: Annotated CPAN documentation
+=item * AnnoCPAN: Annotated CPAN documentation
 
 L<http://annocpan.org/dist/lingua-th-numbers>
 
-=item *
-
-CPAN Ratings
+=item * CPAN Ratings
 
 L<http://cpanratings.perl.org/d/lingua-th-numbers>
 
-=item *
-
-Search CPAN
+=item * Search CPAN
 
 L<http://search.cpan.org/dist/lingua-th-numbers/>
 
