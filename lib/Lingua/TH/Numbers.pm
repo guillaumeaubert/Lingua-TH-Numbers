@@ -364,11 +364,6 @@ sub _spell_integer
 }
 
 
-=head1 AUTHOR
-
-Guillaume Aubert, C<< <aubertg at cpan.org> >>.
-
-
 =head1 CAVEAT
 
 There's too many Unicode issues in Perl 5.6 (in particular with tr/// which
@@ -417,6 +412,12 @@ L<http://cpanratings.perl.org/d/lingua-th-numbers>
 L<https://metacpan.org/release/Lingua-TH-Numbers>
 
 =back
+
+
+=head1 AUTHOR
+
+L<Guillaume Aubert|https://metacpan.org/author/AUBERTG>,
+C<< <aubertg at cpan.org> >>.
 
 
 =head1 COPYRIGHT & LICENSE
