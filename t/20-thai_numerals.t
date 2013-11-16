@@ -28,20 +28,20 @@ foreach my $line ( <DATA> )
 	chomp( $line );
 	next unless defined( $line ) && $line ne '';
 	next if substr( $line, 0, 1 ) eq '#';
-	
+
 	my ( $input, $thai_numerals ) = split( /\t/, $line );
-	
+
 	subtest(
 		"Convert $input to Thai numerals.",
 		sub
 		{
 			plan( tests => 2 );
-			
+
 			my $builder = Test::More->builder();
 			binmode( $builder->output(), ":utf8" );
 			binmode( $builder->failure_output(), ":utf8" );
 			binmode( $builder->todo_output(), ":utf8" );
-			
+
 			my $output;
 			lives_ok(
 				sub
@@ -52,7 +52,7 @@ foreach my $line ( <DATA> )
 				},
 				"Convert input.",
 			);
-			
+
 			is(
 				$output,
 				$thai_numerals,

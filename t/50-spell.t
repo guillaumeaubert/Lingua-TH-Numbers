@@ -27,12 +27,12 @@ foreach my $line ( <DATA> )
 	chomp( $line );
 	next unless defined( $line ) && $line ne '';
 	next if substr( $line, 0, 1 ) eq '#';
-	
+
 	my ( $input, $style, $thai, $rgts ) = split( /\t/, $line );
 	my $informal = defined( $style ) && $style eq 'Informal' ? 1 : 0;
-	
+
 	my $number = Lingua::TH::Numbers->new( $input );
-	
+
 	is(
 		$number->spell(
 			output_mode => 'thai',
@@ -41,7 +41,7 @@ foreach my $line ( <DATA> )
 		$thai,
 		"Spell $input (Thai script, $style).",
 	);
-	
+
 	is(
 		$number->spell(
 			output_mode => 'rtgs',

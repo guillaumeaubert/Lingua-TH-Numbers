@@ -28,9 +28,9 @@ foreach my $line ( <DATA> )
 	chomp( $line );
 	next unless defined( $line ) && $line ne '';
 	next if substr( $line, 0, 1 ) eq '#';
-	
+
 	my ( $input, $is_valid ) = split( /\t/, $line );
-	
+
 	if ( $is_valid eq 'Yes' )
 	{
 		lives_ok(

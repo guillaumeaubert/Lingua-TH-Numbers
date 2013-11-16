@@ -84,21 +84,21 @@ our $SPELLING_OUTPUT_MODES =
 =head1 SYNOPSIS
 
 	use Lingua::TH::Numbers;
-	
+
 	# Input.
 	my $ten = Lingua::TH::Numbers->new( '10' );
 	my $sip = Lingua::TH::Numbers->new( '๑๐' );
 	my $lop_sip = Lingua::TH::Numbers->new( '-๑๐' );
 	my $three_point_one_four = Lingua::TH::Numbers->new( '3.14' );
 	my $nueng_chut_sun_song = Lingua::TH::Numbers->new( '๑.๐๒' );
-	
+
 	# Output.
 	print $ten->thai_numerals(), "\n";
 	print $sip->arabic_numerals(), "\n";
 	print $lop_sip->arabic_numerals(), "\n";
 	print $three_point_one_four->thai_numerals(), "\n";
 	print $nueng_chut_sun_song->arabic_numerals(), "\n";
-	
+
 	# Spell.
 	print $three_point_one_four->spell(), "\n";
 	print $three_point_one_four->spell( output_type => 'thai' ), "\n";
@@ -125,11 +125,11 @@ The input can use either Thai or Arabic numerals, but not both at the same time.
 sub new
 {
 	my ( $class, $input ) = @_;
-	
+
 	# Required parameters.
 	croak 'Input number is missing'
 		unless defined( $input );
-	
+
 	# Find the type of the input.
 	# Note: \d includes thai numbers with the utf8 pragma, so we can't use it here.
 	my ( $arabic, $thai );
@@ -145,7 +145,7 @@ sub new
 	{
 		croak 'The input must use either Thai or Arabic numerals and be a number';
 	}
-	
+
 	# Create the object.
 	my $self = bless(
 		{
@@ -154,7 +154,7 @@ sub new
 		},
 		$class,
 	);
-	
+
 	return $self;
 }
 
@@ -171,14 +171,14 @@ Output the number stored in the object using thai numerals.
 sub thai_numerals
 {
 	my ( $self ) = @_;
-	
+
 	unless ( defined( $self->{'thai'} ) )
 	{
 		# Convert to Thai numerals.
 		$self->{'thai'} = $self->{'arabic'};
 		$self->{'thai'} =~ tr/0123456789/๐๑๒๓๔๕๖๗๘๙/;
 	}
-	
+
 	return $self->{'thai'};
 }
 
@@ -195,14 +195,14 @@ Output the number stored in the object using arabic numerals.
 sub arabic_numerals
 {
 	my ( $self ) = @_;
-	
+
 	unless ( defined( $self->{'arabic'} ) )
 	{
 		# Convert to Thai numerals.
 		$self->{'arabic'} = $self->{'thai'};
 		$self->{'arabic'} =~ tr/๐๑๒๓๔๕๖๗๘๙/0123456789/;
 	}
-	
+
 	return $self->{'arabic'};
 }
 
@@ -220,13 +220,13 @@ parameter I<informal>.
 
 	# Spell using Thai script.
 	print Lingua::TH::Numbers->new( '10' )->spell(), "\n";
-	
+
 	# Spell using the Royal Thai General System.
 	print Lingua::TH::Numbers->new( '10' )->spell( output_mode => 'rtgs' ), "\n";
-	
+
 	# Spell using Thai script, with informal shortcuts.
 	print Lingua::TH::Numbers->new( '10' )->spell( informal => 1 ), "\n";
-	
+
 	# Spell using the Royal Thai General System, with informal shortcuts.
 	print Lingua::TH::Numbers->new( '10' )->spell( output_mode => 'rtgs', informal => 1 ), "\n";
 
@@ -237,7 +237,7 @@ sub spell
 	my ( $self, %args ) = @_;
 	my $informal = delete( $args{'informal'} );
 	my $output_mode = delete( $args{'output_mode'} );
-	
+
 	# Check parameters.
 	$output_mode = 'thai'
 		unless defined( $output_mode );
@@ -245,36 +245,36 @@ sub spell
 		unless defined( $SPELLING_OUTPUT_MODES->{ $output_mode } );
 	$informal = 0
 		unless defined( $informal );
-	
+
 	my $output_mode_index = $SPELLING_OUTPUT_MODES->{ $output_mode };
-	
+
 	# Parse the number.
 	my $number = $self->arabic_numerals();
 	my ( $sign, $integer, $decimals ) = $number =~ /^(-?)(\d+)\.?(\d*)$/;
 	croak 'Can only spell numbers up to ( 10**13 - 1 )'
 		if length( $integer ) > 13;
-	
+
 	# Put all the words in an array, as the word separator varies depending on the
 	# output mode.
 	my @spelling = ();
-	
+
 	# Convert the sign of the number.
 	if ( defined( $sign ) && ( $sign eq '-' ) )
 	{
 		push( @spelling, $MINUS_SIGN->[ $output_mode_index ] );
 	}
-	
+
 	# Convert the integer part of the number.
 	if ( length( $integer ) > 7 )
 	{
 		my $millions;
 		( $millions, $integer ) = $integer =~ /^(\d*)(\d{6})$/;
-		
+
 		push( @spelling, _spell_integer( $millions, $output_mode_index, $informal ) );
 		push( @spelling, $POWERS_OF_TEN->{'6'}->[ $output_mode_index ] );
 	}
 	push( @spelling, _spell_integer( $integer, $output_mode_index, $informal ) );
-	
+
 	# Convert the decimal part of the number.
 	if ( defined( $decimals ) && ( $decimals ne '' ) )
 	{
@@ -284,7 +284,7 @@ sub spell
 			push( @spelling, $DIGITS->{ $decimal }->[ $output_mode_index ] );
 		}
 	}
-	
+
 	# Join the words and return the final string.
 	my $separator = $output_mode eq 'thai'
 		? ''
@@ -310,19 +310,19 @@ sub _spell_integer
 {
 	my ( $integer, $output_mode_index, $is_informal ) = @_;
 	my @spelling = ();
-	
+
 	croak 'Integer is too large for the internal function to spell'
 		if length( $integer ) > 7;
-	
+
 	my @integer_digits  = reverse split( //, $integer );
-	
+
 	for ( my $power_of_ten = scalar( @integer_digits ) - 1; $power_of_ten >= 0; $power_of_ten-- )
 	{
 		my $digit = $integer_digits[ $power_of_ten ];
-		
+
 		# If there's no digit for this power of 10, skip it (except for 0 itself).
 		next if $digit eq '0' && $integer ne '0';
-		
+
 		# 11, 21, ..., 91 use 'et' instead of 'neung' for the trailing 1.
 		if ( $power_of_ten == 0 && $digit eq '1' && $integer ne '1' )
 		{
@@ -359,7 +359,7 @@ sub _spell_integer
 			push( @spelling, $POWERS_OF_TEN->{ $power_of_ten }->[ $output_mode_index ] );
 		}
 	}
-	
+
 	return @spelling;
 }
 
