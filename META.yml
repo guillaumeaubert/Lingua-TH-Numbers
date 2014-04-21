@@ -18,7 +18,7 @@ name: Lingua-TH-Numbers
 provides:
   Lingua::TH::Numbers:
     file: lib/Lingua/TH/Numbers.pm
-    version: v1.0.7
+    version: v1.0.8
 requires:
   Carp: '0'
   Data::Dumper: '0'
@@ -28,4 +28,4 @@ resources:
   homepage: https://metacpan.org/release/Lingua-TH-Numbers
   license: http://www.gnu.org/licenses/gpl-3.0.txt
   repository: https://github.com/guillaumeaubert/Lingua-TH-Numbers
-version: v1.0.7
+version: v1.0.8

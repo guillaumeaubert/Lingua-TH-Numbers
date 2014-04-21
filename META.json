@@ -37,7 +37,7 @@
    "provides" : {
       "Lingua::TH::Numbers" : {
          "file" : "lib/Lingua/TH/Numbers.pm",
-         "version" : "v1.0.7"
+         "version" : "v1.0.8"
       }
    },
    "release_status" : "stable",
@@ -53,5 +53,5 @@
          "url" : "https://github.com/guillaumeaubert/Lingua-TH-Numbers"
       }
    },
-   "version" : "v1.0.7"
+   "version" : "v1.0.8"
 }

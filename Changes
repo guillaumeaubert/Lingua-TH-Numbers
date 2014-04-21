@@ -1,5 +1,10 @@
 Revision history for Lingua-TH-Numbers.
 
+v1.0.8  2014-04-20
+        - Fixed "package version matches dist version" for CPANTS.
+        - Fixed license declared in meta files.
+        - General cleanup.
+
 v1.0.7  2013-05-08
         - Moved release tests to xt/.
         - Updated Build.PL to handle release tests as part of disttest.
