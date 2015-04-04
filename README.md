@@ -3,7 +3,7 @@ Lingua-TH-Numbers
 
 [![Build Status](https://travis-ci.org/guillaumeaubert/Lingua-TH-Numbers.svg?branch=master)](https://travis-ci.org/guillaumeaubert/Lingua-TH-Numbers)
 [![Coverage Status](https://coveralls.io/repos/guillaumeaubert/Lingua-TH-Numbers/badge.svg?branch=master)](https://coveralls.io/r/guillaumeaubert/Lingua-TH-Numbers?branch=master)
-[![Latest Version](https://img.shields.io/github/tag/guillaumeaubert/Lingua-TH-Numbers.svg?style=flat)](https://metacpan.org/release/Lingua-TH-Numbers)
+[![CPAN](https://img.shields.io/cpan/v/Lingua-TH-Numbers.svg)](https://metacpan.org/release/Lingua-TH-Numbers)
 
 Lingua-TH-Numbers offers an object oriented package to convert between Thai and
 Arabic numerals, as well as spell numbers in Thai.
