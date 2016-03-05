@@ -10,7 +10,7 @@ use warnings;
 use utf8;
 
 use Carp;
-use Data::Dumper;
+#use Data::Dumper;
 
 
 =head1 NAME
@@ -101,9 +101,9 @@ our $SPELLING_OUTPUT_MODES =
 
 	# Spell.
 	print $three_point_one_four->spell(), "\n";
-	print $three_point_one_four->spell( output_type => 'thai' ), "\n";
-	print $nueng_chut_sun_song->spell( output_type => 'rtgs' ), "\n";
-	print $nueng_chut_sun_song->spell( output_type => 'rtgs', informal => 1 ), "\n";
+	print $three_point_one_four->spell( output_mode => 'thai' ), "\n";
+	print $nueng_chut_sun_song->spell( output_mode => 'rtgs' ), "\n";
+	print $nueng_chut_sun_song->spell( output_mode => 'rtgs', informal => 1 ), "\n";
 
 
 =head1 METHODS
