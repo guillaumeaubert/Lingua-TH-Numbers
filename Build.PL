@@ -49,7 +49,6 @@ my $builder = $class->new(
 	{
 		'perl'                  => 5.008,
 		'Carp'                  => 0,
-		'Data::Dumper'          => 0,
 	},
 	add_to_cleanup      =>
 	[

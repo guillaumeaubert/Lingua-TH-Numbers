@@ -3,17 +3,16 @@ require 5.008;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'NAME' => 'Lingua::TH::Numbers',
-  'VERSION_FROM' => 'lib/Lingua/TH/Numbers.pm',
-  'PREREQ_PM' => {
-                   'Carp' => 0,
-                   'Data::Dumper' => 0,
-                   'Test::Exception' => 0,
-                   'Test::FailWarnings' => 0,
-                   'Test::More' => '0.94'
-                 },
   'INSTALLDIRS' => 'site',
-  'EXE_FILES' => [],
-  'PL_FILES' => {}
+  'PL_FILES' => {},
+  'NAME' => 'Lingua::TH::Numbers',
+  'PREREQ_PM' => {
+                   'Test::FailWarnings' => 0,
+                   'Test::More' => '0.94',
+                   'Test::Exception' => 0,
+                   'Carp' => 0
+                 },
+  'VERSION_FROM' => 'lib/Lingua/TH/Numbers.pm',
+  'EXE_FILES' => []
 )
 ;
