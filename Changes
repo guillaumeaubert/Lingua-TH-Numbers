@@ -1,5 +1,9 @@
 Revision history for Lingua-TH-Numbers.
 
+v1.0.9  2015-03-05
+        - Fixed documentation (GH-1). Thanks @trizen!
+        - Cleaned up prereqs (GH-1).
+
 v1.0.8  2014-04-20
         - Fixed "package version matches dist version" for CPANTS.
         - Fixed license declared in meta files.
